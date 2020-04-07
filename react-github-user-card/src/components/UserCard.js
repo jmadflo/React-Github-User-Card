@@ -3,9 +3,15 @@ import React from 'react'
 const UserCard = props => {
     const { url, name, login, avatar_url, public_repos, location, hireable } = props.user
     
+    const fixUrl = (urlParam) => {
+        let string=`${urlParam}`.replace('api.', '')
+        string = string.toString().replace('/users', '')
+        console.log(string)
+        return string
+    }
     return (
         <div className='UserCard'>
-            <a href={url}>
+            <a href={fixUrl(url)}>
                 <h3>{name}</h3>
                 <img src={avatar_url} alt={`${name}'s profile avatar`}/>
                 <div className="userContent">
