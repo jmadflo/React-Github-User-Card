@@ -1,4 +1,55 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
+.App {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2%;
+}
+
+.UserCard {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.userContent {
+  text-align: left;
+}
+
+.UserCard a {
+  text-decoration: none;
+  color: black;
+  padding: 2% 4%;
+}
+
+.UserCard h3 {
+  margin: 10px 0;
+}
+
+.UserCard img{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.userContent p {
+  margin: 10px 0;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.MainUser {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}

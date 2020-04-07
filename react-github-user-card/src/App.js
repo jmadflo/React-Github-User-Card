@@ -1,12 +1,14 @@
 import React from 'react'
 import axios from 'axios'
+import MainUser from './components/MainUser'
 import './App.css'
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      userData: {}
+      mainUserData: {},
+      followersData: []
     }
   }
   componentDidMount() {
@@ -14,7 +16,7 @@ class App extends React.Component {
       .then(response => {
         console.log(response)
         this.setState({
-          userData: response.data
+          mainUserData: response.data
         })
         console.log(this.state.userData)
       })
@@ -22,7 +24,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        
+        <MainUser mainUser={this.state.mainUserData}/>
       </div>
     )
   }
