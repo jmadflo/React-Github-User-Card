@@ -3,19 +3,18 @@
 }
 
 .App {
-  display: flex;
-  flex-flow: row wrap;
   padding: 2%;
 }
 
 .UserCard {
-  width: 50%;
+  width: 45%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid black;
   border-radius: 10px;
+  margin-bottom: 25px;
 }
 
 .userContent {
@@ -44,6 +43,7 @@
 
 h2 {
   text-decoration: underline;
+  margin-bottom: 30px;
 }
 
 .MainUser {
@@ -52,4 +52,17 @@ h2 {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+}
+
+.FollowersList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.followerItems {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
