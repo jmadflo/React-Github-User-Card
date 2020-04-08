@@ -3,15 +3,17 @@ import React from 'react'
 const UserCard = props => {
     const { url, name, login, avatar_url, public_repos, location, hireable } = props.user
     
+    // fix url to go to user pages on click
     const fixUrl = (urlParam) => {
         let string=`${urlParam}`.replace('api.', '')
         string = string.toString().replace('/users', '')
-        console.log(string)
+        // console.log(string)
         return string
     }
+
     return (
         <div className='UserCard'>
-            <a href={fixUrl(url)}>
+            <a href={fixUrl(url)} target='_blank' rel="noopener noreferrer">
                 <h3>{name}</h3>
                 <img src={avatar_url} alt={`${name}'s profile avatar`}/>
                 <div className="userContent">

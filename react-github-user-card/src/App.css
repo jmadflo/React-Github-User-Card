@@ -6,6 +6,11 @@
   padding: 2%;
 }
 
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .UserCard {
   width: 45%;
   text-align: center;
