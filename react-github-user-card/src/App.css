@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 2%;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.UserCard {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.userContent {
+  text-align: left;
+}
+
+.UserCard a {
+  text-decoration: none;
+  color: black;
+  padding: 2% 4%;
+}
+
+.UserCard h3 {
+  margin: 10px 0;
+}
+
+.UserCard img{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.userContent p {
+  margin: 10px 0;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+.MainUser {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.FollowersList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.followerItems {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
